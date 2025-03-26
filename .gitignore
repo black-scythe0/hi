@@ -1,0 +1,8 @@
+# Temporary files
+*.txt
+
+send_mail.py
+
+# IDE-files
+
+.vscode/
