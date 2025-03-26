@@ -1,0 +1,627 @@
+   #Java Interview Questions on Constructors Check if the door is open or closed
+
+   Skip to content
+   geeksforgeeks
+     * Courses
+          + Get IBM Certifications
+               o Complete Machine Learning & Data Science Program
+               o Data Science Training Program
+               o Data Analytics Training using Excel, SQL, Python & PowerBI
+               o Complete Data Analytics Program
+          + DSA to Development
+          + For Working Professionals
+               o Data Structure & Algorithm Classes (Live)
+               o System Design (Live)
+               o JAVA Backend Development(Live)
+               o DevOps(Live)
+               o Data Structures & Algorithms in Python
+          + For Students
+               o Interview Preparation Course
+               o GATE CS & IT 2025
+               o Data Science (Live)
+               o Data Structure & Algorithm-Self Paced(C++/JAVA)
+               o Master Competitive Programming(Live)
+               o Full Stack Development with React & Node JS(Live)
+          + All Courses
+          + Full Stack Development
+          + Data Science Program
+     * Tutorials
+          + Python
+               o Python Tutorial
+               o Python Programs
+               o Advanced Python Tutorial
+               o Python Projects
+          + Web Development in Python
+               o Django
+               o Flask
+               o Postman
+               o Web Scrapping in Python
+          + Data Structures & Algorithms
+               o Complete DSA Tutorial
+               o Company Wise Preparation
+               o Competitive Programming
+               o SDE Sheets
+          + Languages
+               o Java
+               o C++
+               o R Tutorial
+               o C
+               o C#
+               o SQL
+               o Perl
+               o Go Language
+          + Interview Corner
+               o System Design Tutorial
+               o Top Topics
+               o Practice Company Questions
+               o Interview Experiences
+               o Experienced Interviews
+               o Internship Interviews
+               o Multiple Choice Quizzes
+               o Aptitude for Placements
+               o Puzzles for Interviews
+          + Web Development
+               o HTML
+               o CSS
+               o JavaScript
+               o TypeScript
+               o ReactJS
+               o NextJS
+               o Node.js
+               o PHP
+               o 100 Days of Web Development
+          + CS Subjects
+               o Engineering Mathematics
+               o Operating System
+               o DBMS
+               o Computer Networks
+               o Computer Organization and Architecture
+               o Theory of Computation
+               o Compiler Design
+               o Digital Logic
+               o Software Engineering
+          + DevOps And Linux
+               o DevOps Tutorial
+               o GIT
+               o AWS
+               o Kubernetes
+               o Docker
+               o Microsoft Azure Tutorial
+               o Google Cloud Platform
+               o Linux Tutorial
+          + GATE
+               o GATE Computer Science Notes
+               o GATE CS Original Papers and Official Keys
+               o GATE CS 2025 Syllabus
+               o GATE DA 2025 Syllabus
+          + School Learning
+          + GeeksforGeeks Videos
+     * Data Science
+          + Machine Learning
+          + EDA [Exploratory Data Analysis]
+          + Data Analysis with Python
+          + Python Data Visualization
+          + Data Science using Python
+          + Data Science using R
+          + Deep Learning
+          + NLP Tutorial
+          + Computer Vision
+          + Interview Corner
+               o Machine Learning Interview Question
+               o Deep Learning Interview Question
+               o NLP Interview Question
+               o Python Interview Questions
+               o Top 50 R Interview Questions
+     * Practice
+          + All DSA Problems
+          + Problem of the Day
+          + GfG SDE Sheet
+          + Curated DSA Lists
+               o Beginner's DSA Sheet
+               o Love Babbar Sheet
+               o Top 50 Array Problems
+               o Top 50 String Problems
+               o Top 50 Tree Problems
+               o Top 50 Graph Problems
+               o Top 50 DP Problems
+
+     * ____________________ (BUTTON)
+     * (BUTTON)
+     * Notifications
+       Mark all as read
+       All
+       View All
+       Notifications
+       Mark all as read
+       All
+       Unread
+       Read
+       You're all caught up!!
+     *
+     *
+
+   (BUTTON)
+     * Python Course
+     * Python Tutorial
+     * Interview Questions
+     * Python Quiz
+     * Python Glossary
+     * Python Projects
+     * Practice Python
+     * Data Science With Python
+     * Python Web Dev
+     * DSA with Python
+     * Python OOPs
+
+   (BUTTON)
+
+   (BUTTON) ▲
+
+   Open In App
+     * Ending Soon: 90% Refund Offer
+     * Share Your Experiences
+     * Send Emails Using Python
+     * Send Email Using yagmail in Python
+     * File Sharing App using Python
+     * Send Chrome Notification Using Python
+     * Send message to FB friend using Python
+     * Sending Email using FastAPI Framework in Python
+     * Tweet using Python
+     * Scrapy - Sending an E-mail
+     * Making SOAP API calls using Python
+     * Python | Send SMS using Twilio
+     * Download File in Selenium Using Python
+     * Python | Build a REST API using Flask
+     * Selenium Base Mini Project Using Python
+     * Send SMS with REST Using Python
+     * Send an SMS Message with Python
+     * Telnet Automation / Scripting Using Python
+     * Get live train status using Python
+     * Dominos Chatbot using Python
+     * How to Send Beautiful Emails in Python
+     * DSA to Development Course
+
+Send Emails Using Python
+
+   Last Updated : 17 Jun, 2024
+   Summarize
+   Comments
+   Improve
+     *
+     *
+     *
+
+   Suggest changes
+   Like Article
+   Like
+   Share
+   Report
+   News Follow
+
+   By using Python, you can send emails which can be a valuable skill for automation, communication, and data-driven processes. In this article, we will explore
+   how to send mail from Gmail using Python.
+
+How can you send Emails using Python?
+
+   Python offers a library to send emails- “SMTP” Library. “smtplib” creates a Simple Mail Transfer Protocol (SMTP) client session object which is used to send
+   emails to any valid Email ID on the internet.
+
+   Prerequisites
+
+   Before starting into the main aspect, we need to make sure about some prerequisites. You need to make sure that Python is already installed in your system. To
+   install Python in your system-
+
+     You can Refer to this article – Download and Install Python 3 Latest Version
+
+   Additionally, you’ll need access to an email account with SMTP (Simple Mail Transfer Protocol) credentials. Most of the email providers such as Gmail or
+   Outlook gives these credentials fo sending mails programmatically.
+
+What is SMTP?
+
+   SMTP is a protocol that is used to send emails, and as we know Python provides the ‘smtplib’ library to interact with it. Begin by importing the library and
+   establishing a connection with your email server. Below are the following steps to send mails:
+
+   Step 1: First of all, “smtplib” library needs to be imported.
+
+   Step 2: After that create a session, we will be using its instance SMTP to encapsulate an SMTP connection.
+s = smtplib.SMTP('smtp.gmail.com', 587)
+
+   Step 3: In this, you need to pass the first parameter of the server location and the second parameter of the port to use. For Gmail, we use port number 587.
+
+   Step 4: For security reasons, now put the SMTP connection in TLS mode. TLS (Transport Layer Security) encrypts all the SMTP commands. After that, for security
+   and authentication, you need to pass your Gmail account credentials in the login instance. The compiler will show an authentication error if you enter an
+   invalid email id or password.
+
+   Step 5: Store the message you need to send in a variable say, message. Using the sendmail() instance, send your message. sendmail() uses three parameters:
+   sender_email_id, receiver_email_id and message_to_be_sent. The parameters need to be in the same sequence.
+
+Code Implementation:
+
+   This will send the email from your account. After you have completed your task, terminate the SMTP session by using quit().
+   Python
+import smtplib
+# creates SMTP session
+s = smtplib.SMTP('smtp.gmail.com', 587)
+# start TLS for security
+s.starttls()
+# Authentication
+s.login("sender_email_id", "sender_email_id_password")
+# message to be sent
+message = "Message_you_need_to_send"
+# sending the mail
+s.sendmail("sender_email_id", "receiver_email_id", message)
+# terminating the session
+s.quit()
+
+Send Email to Multiple Recipients using Python
+
+   If you need to send the same message to different people. You can use for loop for that. For example, you have a list of email ids to which you need to send
+   the same mail. To do so, insert a “for” loop between the initialization and termination of the SMTP session. Loop will initialize turn by turn and after
+   sending the email, the SMTP session will be terminated.
+   Python
+import smtplib
+
+# list of email_id to send the mail
+li = ["xxxxx@gmail.com", "yyyyy@gmail.com"]
+
+for dest in li:
+    s = smtplib.SMTP('smtp.gmail.com', 587)
+    s.starttls()
+    s.login("sender_email_id", "sender_email_id_password")
+    message = "Message_you_need_to_send"
+    s.sendmail("sender_email_id", dest, message)
+    s.quit()
+
+   Some Important Points:
+     * One of the most amazing things about this code is that we can send any number of emails using this and Gmail mostly puts your mail in the primary section.
+       Sent emails would not be detected as Spam generally.
+     * File handling can also be used to fetch email IDs from a file and further used for sending emails.
+     * This code can send simple mail which doesn’t have any attachment or any subject.
+
+     You can also refer to –  Send mail with attachments from your Gmail account using Python
+
+   Level up your coding with DSA Python in 90 days! Master key algorithms, solve complex problems, and prepare for top tech interviews. Join the Three 90
+   Challenge—complete 90% of the course in 90 days and earn a 90% refund. Start your Python DSA journey today!
+   (BUTTON)
+   Comment
+   (BUTTON)
+   More info
+   (BUTTON) Placement Training Program
+   Next Article
+   Send Email Using yagmail in Python
+   author
+   kartik
+   (kartik) Follow
+   News
+   (BUTTON)
+   Improve
+   Article Tags :
+     * Python
+     * TechTips
+
+   Practice Tags :
+     * python
+
+Similar Reads
+
+   How to Send Beautiful Emails in Python
+   In this article we will send stylized emails using Python we will be using smtplib. The Python smtplib module defines an SMTP client session object which can
+   be used to send mail to any recipient with an SMTP listener. To send emails to any legitimate email address on the internet, "smtplib" produces a Simple Mail
+   Transfer Protocol client session o
+   3 min read
+   How to Use the Gmail SMTP Server to Send Emails For Free?
+   Gmail is the most important email servicing application that Google introduced in 2004. And now, the number of users has increased to an enormous 5 billion
+   globally. Among them, around 1.5 billion users are using their Gmail accounts regularly. According to one survey in 2022, nearly 30% of emails are sent or
+   received from a Gmail server. Like, any
+   4 min read
+   How To Schedule and Send Emails in Google Spreadsheet?
+   Sometimes we get the work of sending emails to a list of emails, so, they can receive the email together at a specific time, and for this work, we can use
+   Google Spreadsheet to schedule our emails for a particular date and time. We can use a script in Google Sheets to schedule sending as many email messages as we
+   like. To do so follow the below
+   2 min read
+   How to read Emails from Gmail using Gmail API in Python ?
+   In this article, we will see how to read Emails from your Gmail using Gmail API in Python. Gmail API is a RESTful API that allows users to interact with your
+   Gmail account and use its features with a Python script. So, let's go ahead and write a simple Python script to read emails. RequirementsPython (2.6 or
+   higher)A Google account with Gmail enabl
+   6 min read
+   Sending Emails Using API in Flask-Mail
+   Python, being a powerful language don’t need any external library to import and offers a native library to send emails- “SMTP lib”. “smtplib” creates a Simple
+   Mail Transfer Protocol client session object which is used to send emails to any valid email id on the internet. This article revolves around how we can send
+   bulk customised emails to a group
+   3 min read
+   Python | Fetch your gmail emails from a particular user
+   If you are ever curious to know how we can fetch Gmail e-mails using Python then this article is for you.As we know Python is a multi-utility language which
+   can be used to do a wide range of tasks. Fetching Gmail emails though is a tedious task but with Python, many things can be done if you are well versed with
+   its usage. Gmail provides IMAP acces
+   5 min read
+   Fetch Unseen Emails From Gmail Inbox
+   Python is a widely used high-level, general-purpose, interpreted, multi-utility, dynamic programming language. It can be used to do a wide range of tasks like
+   machine learning, web application development, cross-platform GUI development, and much more. Fetching Gmail is another of a task that could be achieved by
+   Python. You may need to fetch a mai
+   2 min read
+   How to Find Archived Emails in Gmail?
+   Archiving emails in Gmail is a great way to keep your inbox organized without deleting important messages. However, finding these archived emails can sometimes
+   be a bit tricky. Whether you need to revisit an old conversation or retrieve important information, knowing how to find archived emails in Gmail is essential.
+   This article will walk you thro
+   7 min read
+   How to Convert your Emails to PDF through Email Itself?
+   In today's fast-paced digital world, converting emails to PDF format can be incredibly useful for archiving important information, sharing documents securely,
+   and keeping records for future reference. But did you know that you can convert your emails to PDFs directly through your email itself? In this guide, we will
+   walk you through the simple step
+   6 min read
+   10 Tips to Identify Phishing Emails
+   In today's digital world, phishing emails are one of the most common tactics used by cybercriminals to steal personal information. Knowing how to identify
+   phishing emails is crucial to protect yourself from these scams. This article provides 10 tips to identify phishing emails, helping you spot suspicious
+   messages and avoid falling victim to fraud.
+   5 min read
+   (BUTTON) Like
+
+   course-img
+   265k+ interested Geeks
+   Python Full Course Online - Complete Beginner to Advanced
+   (BUTTON) Explore
+   course-img
+   15k+ interested Geeks
+   CBSE Class 12 Computer Science
+   (BUTTON) Explore
+   course-img
+   1k+ interested Geeks
+   Artificial Intelligence for Kids - Complete AI Course for Beginners
+   (BUTTON) Explore
+
+   geeksforgeeks-footer-logo
+   Corporate & Communications Address:
+   A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)
+   Registered Address:
+   K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305
+   GFG App on Play Store GFG App on App Store
+   Advertise with us
+     * Company
+     * About Us
+     * Legal
+     * Privacy Policy
+     * Careers
+     * In Media
+     * Contact Us
+     * GfG Corporate Solution
+     * Placement Training Program
+
+     * Explore
+     * Job-A-Thon Hiring Challenge
+     * Hack-A-Thon
+     * GfG Weekly Contest
+     * Offline Classes (Delhi/NCR)
+     * DSA in JAVA/C++
+     * Master System Design
+     * Master CP
+     * GeeksforGeeks Videos
+     * Geeks Community
+
+     * Languages
+     * Python
+     * Java
+     * C++
+     * PHP
+     * GoLang
+     * SQL
+     * R Language
+     * Android Tutorial
+
+     * DSA
+     * Data Structures
+     * Algorithms
+     * DSA for Beginners
+     * Basic DSA Problems
+     * DSA Roadmap
+     * DSA Interview Questions
+     * Competitive Programming
+
+     * Data Science & ML
+     * Data Science With Python
+     * Data Science For Beginner
+     * Machine Learning
+     * ML Maths
+     * Data Visualisation
+     * Pandas
+     * NumPy
+     * NLP
+     * Deep Learning
+
+     * Web Technologies
+     * HTML
+     * CSS
+     * JavaScript
+     * TypeScript
+     * ReactJS
+     * NextJS
+     * NodeJs
+     * Bootstrap
+     * Tailwind CSS
+
+     * Python Tutorial
+     * Python Programming Examples
+     * Django Tutorial
+     * Python Projects
+     * Python Tkinter
+     * Web Scraping
+     * OpenCV Tutorial
+     * Python Interview Question
+
+     * Computer Science
+     * GATE CS Notes
+     * Operating Systems
+     * Computer Network
+     * Database Management System
+     * Software Engineering
+     * Digital Logic Design
+     * Engineering Maths
+
+     * DevOps
+     * Git
+     * AWS
+     * Docker
+     * Kubernetes
+     * Azure
+     * GCP
+     * DevOps Roadmap
+
+     * System Design
+     * High Level Design
+     * Low Level Design
+     * UML Diagrams
+     * Interview Guide
+     * Design Patterns
+     * OOAD
+     * System Design Bootcamp
+     * Interview Questions
+
+     * School Subjects
+     * Mathematics
+     * Physics
+     * Chemistry
+     * Biology
+     * Social Science
+     * English Grammar
+
+     * Software and Tools
+     * AI Tools Directory
+     * Marketing Tools Directory
+     * Accounting Software Directory
+     * HR Management Tools
+     * Editing Software Directory
+     * Microsoft Products and Apps
+     * Figma Tutorial
+
+     * Databases
+     * SQL
+     * MYSQL
+     * PostgreSQL
+     * PL/SQL
+     * MongoDB
+
+     * Preparation Corner
+     * Company-Wise Recruitment Process
+     * Resume Templates
+     * Aptitude Preparation
+     * Puzzles
+     * Company-Wise Preparation
+     * Companies
+     * Colleges
+
+     * Competitive Exams
+     * JEE Advanced
+     * UGC NET
+     * UPSC
+     * SSC CGL
+     * SBI PO
+     * SBI Clerk
+     * IBPS PO
+     * IBPS Clerk
+
+     * More Tutorials
+     * Software Development
+     * Software Testing
+     * Product Management
+     * Project Management
+     * Linux
+     * Excel
+     * All Cheat Sheets
+     * Recent Articles
+
+     * Free Online Tools
+     * Typing Test
+     * Image Editor
+     * Code Formatters
+     * Code Converters
+     * Currency Converter
+     * Random Number Generator
+     * Random Password Generator
+
+     * Write & Earn
+     * Write an Article
+     * Improve an Article
+     * Pick Topics to Write
+     * Share your Experiences
+     * Internships
+
+     * DSA/Placements
+     * DSA - Self Paced Course
+     * DSA in JavaScript - Self Paced Course
+     * DSA in Python - Self Paced
+     * C Programming Course Online - Learn C with Data Structures
+     * Complete Interview Preparation
+     * Master Competitive Programming
+     * Core CS Subject for Interview Preparation
+     * Mastering System Design: LLD to HLD
+     * Tech Interview 101 - From DSA to System Design [LIVE]
+     * DSA to Development [HYBRID]
+     * Placement Preparation Crash Course [LIVE]
+
+     * Development/Testing
+     * JavaScript Full Course
+     * React JS Course
+     * React Native Course
+     * Django Web Development Course
+     * Complete Bootstrap Course
+     * Full Stack Development - [LIVE]
+     * JAVA Backend Development - [LIVE]
+     * Complete Software Testing Course [LIVE]
+     * Android Mastery with Kotlin [LIVE]
+
+     * Machine Learning/Data Science
+     * Complete Machine Learning & Data Science Program - [LIVE]
+     * Data Analytics Training using Excel, SQL, Python & PowerBI - [LIVE]
+     * Data Science Training Program - [LIVE]
+     * Mastering Generative AI and ChatGPT
+     * Data Science Course with IBM Certification
+
+     * Programming Languages
+     * C Programming with Data Structures
+     * C++ Programming Course
+     * Java Programming Course
+     * Python Full Course
+
+     * Clouds/Devops
+     * DevOps Engineering
+     * AWS Solutions Architect Certification
+     * Salesforce Certified Administrator Course
+
+     * GATE 2026
+     * GATE CS Rank Booster
+     * GATE DA Rank Booster
+     * GATE CS & IT Course - 2026
+     * GATE DA Course 2026
+     * GATE Rank Predictor
+
+   @GeeksforGeeks, Sanchhaya Education Private Limited, All rights reserved
+
+   We use cookies to ensure you have the best browsing experience on our website. By using our site, you acknowledge that you have read and understood our Cookie
+   Policy & Privacy Policy (BUTTON) Got It !
+
+   Lightbox
+
+   Improvement
+   (BUTTON) Suggest changes
+   Suggest Changes
+   Help us improve. Share your suggestions to enhance the article. Contribute your expertise and make a difference in the GeeksforGeeks portal.
+   geeksforgeeks-suggest-icon
+   Create Improvement
+   Enhance the article with your expertise. Contribute to the GeeksforGeeks community and help create better learning resources for all.
+   geeksforgeeks-improvement-icon
+   Suggest Changes
+   min 4 words, max Words Limit:1000
+
+Thank You!
+
+   Your suggestions are valuable to us.
+
+   (BUTTON)
+
+What kind of Experience do you want to share?
+
+   Interview Experiences
+   Admission Experiences
+   Career Journeys
+   Work Experiences
+   Campus Experiences
+   Competitive Exam Experiences
