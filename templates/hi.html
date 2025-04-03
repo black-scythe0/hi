@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hi</title>
+</head>
+<body>
+    <h1>chat</h1>
+    <form method="POST" action="/">
+        <label for="message">enter</label>
+        <br>
+        <input type="text" id="message" name="message" required>
+        <br>
+        <br>
+        <button type="submit">submit</button>
+
+    </form>
+    <h2>Message:</h2>
+    <ol>
+        {% for msg in messages %}
+        <li>{{msg}}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>

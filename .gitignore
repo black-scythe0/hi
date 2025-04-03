@@ -1,0 +1,8 @@
+# Temporary files
+*.txt
+
+#-----------------#
+
+# IDE-files
+
+.vscode/
