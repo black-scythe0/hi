@@ -1,5 +1,11 @@
+from hashlib import sha256
+from secrets import token_hex
 
-class user:
+
+
+
+
+class user():
 
     '''
 User class containig:-
@@ -8,15 +14,21 @@ User class containig:-
 'b_' for """"""" "" """ bool
 's_' for """"""" "" """  string.
 
+func secure_hash_d:-
+
+'used to generate reandom hashes'
+
     '''
-    def __init__(self, h_name, b_link, h_key, h_passwd):
-        self.name = h_name
-        self.link = b_link  
-        self.key = h_key
-        self.passwd = h_passwd
+    def __init__(self, name :str, b_link :bool, key :str, passwd: str):
+        self.h_name = user.secure_hash_d(name)
+        self.b_link = b_link  
+        self.h_key = user.secure_hash_d(key)
+        self.h_passwd = user.secure_hash_d(passwd)
 
-
-user = user()        
+        
+    def secure_hash_d(data):
+        random = token_hex(69)
+        return sha256((data + random).encode()).hexdigest()
 
 
 
