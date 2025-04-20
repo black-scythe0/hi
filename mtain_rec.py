@@ -5,6 +5,7 @@
 
 
 import os
+import sys
 
 import pickle  # just using it for now, sure to impliment a better one in future
 
@@ -21,15 +22,21 @@ class mtain_rec:
     def write_rec(self):
         try:
              with open(f"{self.file}", "ab") as rec_file:
-                pickle.dump(self.user_data,rec_file)
+                 pickle.dump(self.user_data,rec_file)
+                 
         except Exception as e:
-                assert e != None, "ERRoR OpeNNiNg FiLe!"
+                 assert e != None, "ERRoR OpeNNiNg FiLe!"
                 
     def read_rec(self,file):
+        try:
         
-        with open(f"{self.file}", "rb") as rec_file:
-            rec_data = pickle.load(rec_file)
-            return rec_data
+             with open(f"{self.file}", "rb") as rec_file:
+                 rec_data = pickle.load(rec_file)
+                 return rec_data
+        except Exception as e:
+                 assert e != None, "ERRoR OpeNNiNg FiLe!"
     
         
 
+if __name__ == "__main__":
+    pass

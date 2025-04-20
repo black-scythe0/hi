@@ -19,7 +19,13 @@ func secure_hash_d:-
 'used to generate reandom hashes'
 
     '''
-    def __init__(self, name :str, b_link :bool, key :str, passwd: str):
+
+    name :str
+    b_link :bool
+    key :str
+    passwd :str
+    
+    def __init__(self, name, b_link, key, passwd):
         self.h_name = user.secure_hash_d(name)
         self.b_link = b_link  
         self.h_key = user.secure_hash_d(key)
@@ -33,3 +39,5 @@ func secure_hash_d:-
 
 
 
+if __name__ == "__main__":
+    pass
