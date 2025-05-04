@@ -1,6 +1,7 @@
 #/data/data/com.termux/files/usr/bin/bash
 
-
+yel="\e[1;33m"
+whi="\e[0m"
 
 pythonId=$(pgrep python3)
 
@@ -13,13 +14,24 @@ if [ -n "${pythonId}" ]; then
 else
     echo "no py process running."
     echo "starting server"
-    echo " see error.txt for more info "
-    date>> error.txt
-    echo " ">> error.txt
+    date>> log.txt
+    echo " ">> log.txt
     
-    python3 hi.py --verbose 2>> error.txt
-    echo " ">> error.txt
-    echo " ">> error.txt
+    python3 hi.py --verbose 2>> log.txt
+    echo " ">> log.txt
+    echo " ">> log.txt
+fi
+
+sleep 3 &&
+
+if [ -n "${pythonId}" ];then
+    echo "server is running.."
+
+else
+    echo "server not running"
+    echo -e "${yel}--see log.txt fro more info--${whi}"
+
+
 fi
 
 
