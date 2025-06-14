@@ -1,1 +1,99 @@
 
+Sat Jun 14 00:46:53 IST 2025
+ 
+Traceback (most recent call last):
+  File "/storage/emulated/0/Programming/blackscyth0/hi/hi.py", line 7, in <module>
+    from flask_socketio import SocketIO,emit
+ModuleNotFoundError: No module named 'flask_socketio'
+ 
+ 
+Sat Jun 14 00:47:41 IST 2025
+ 
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:17605
+[33mPress CTRL+C to quit[0m
+ 
+ 
+Sat Jun 14 00:49:09 IST 2025
+ 
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:17633
+[33mPress CTRL+C to quit[0m
+ 
+ 
+Sat Jun 14 01:02:24 IST 2025
+ 
+ 
+ 
+Sat Jun 14 20:16:47 IST 2025
+ 
+ 
+ 
+Sat Jun 14 22:27:03 IST 2025
+ 
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5550
+ * Running on http://192.168.1.6:5550
+[33mPress CTRL+C to quit[0m
+192.168.1.2 - - [14/Jun/2025 22:28:25] "POST /chat HTTP/1.1" 200 -
+192.168.1.2 - - [14/Jun/2025 22:28:30] "POST /chat HTTP/1.1" 200 -
+[2025-06-14 22:28:41,319] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'back' did not return a valid response. The function either returned None or ended without a return statement.
+192.168.1.2 - - [14/Jun/2025 22:28:41] "[35m[1mGET / HTTP/1.1[0m" 500 -
+192.168.1.2 - - [14/Jun/2025 22:28:48] "GET /hi HTTP/1.1" 200 -
+ 
+ 
+Sat Jun 14 22:33:57 IST 2025
+ 
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5550
+ * Running on http://192.168.1.6:5550
+[33mPress CTRL+C to quit[0m
+192.168.1.2 - - [14/Jun/2025 22:34:03] "GET /hi HTTP/1.1" 200 -
+192.168.1.2 - - [14/Jun/2025 22:34:05] "GET /hi HTTP/1.1" 200 -
+ 
+ 
+Sat Jun 14 22:34:51 IST 2025
+ 
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5550
+ * Running on http://192.168.1.6:5550
+[33mPress CTRL+C to quit[0m
+192.168.1.2 - - [14/Jun/2025 22:34:56] "GET /hi HTTP/1.1" 200 -
+192.168.1.2 - - [14/Jun/2025 22:35:01] "GET / HTTP/1.1" 200 -
+192.168.1.2 - - [14/Jun/2025 22:35:03] "[33mGET /hi.html HTTP/1.1[0m" 404 -
+ 
+ 
+Sat Jun 14 22:35:28 IST 2025
+ 
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5550
+ * Running on http://192.168.1.6:5550
+[33mPress CTRL+C to quit[0m
+192.168.1.2 - - [14/Jun/2025 22:35:31] "[33mGET /hi.html HTTP/1.1[0m" 404 -
+192.168.1.2 - - [14/Jun/2025 22:35:33] "[33mGET /hi.html HTTP/1.1[0m" 404 -
+192.168.1.2 - - [14/Jun/2025 22:35:35] "[33mGET /hi.html HTTP/1.1[0m" 404 -
+192.168.1.2 - - [14/Jun/2025 22:35:36] "[33mGET /hi.html HTTP/1.1[0m" 404 -
+192.168.1.2 - - [14/Jun/2025 22:35:38] "[33mGET /hi.html HTTP/1.1[0m" 404 -
+192.168.1.2 - - [14/Jun/2025 22:35:44] "GET /hi HTTP/1.1" 200 -
+192.168.1.2 - - [14/Jun/2025 22:35:48] "GET / HTTP/1.1" 200 -
+192.168.1.2 - - [14/Jun/2025 22:35:51] "GET /hi HTTP/1.1" 200 -
+192.168.1.2 - - [14/Jun/2025 22:36:26] "GET /hi HTTP/1.1" 200 -
+192.168.1.2 - - [14/Jun/2025 22:37:27] "GET / HTTP/1.1" 200 -
+192.168.1.2 - - [14/Jun/2025 22:37:37] "GET /hi HTTP/1.1" 200 -

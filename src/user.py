@@ -5,7 +5,7 @@ from secrets import token_hex
 
 
 
-class user():
+class user:
 
     '''
 User class containig:-
@@ -33,11 +33,13 @@ func secure_hash_d:-
 
         
     def secure_hash_d(data):
-        random = token_hex(69)
-        return sha256((data + random).encode()).hexdigest()
+        salt = token_hex(69)
+        
+        return sha256((data + salt).encode()).hexdigest()
 
 
 
 
 if __name__ == "__main__":
-    pass
+    tobject = user.secure_hash_d("hello")
+    print(tobject)
